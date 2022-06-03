@@ -16,8 +16,8 @@ jobs:
       - name: Get version
         id: get_version
         run: |
-            VERSION=$(cat version)
-            echo ::set-output name=version::$VERSION
+            VERSION=$(cat version-num)
+            echo ::set-output name=version::v$VERSION
       - name: Get latest tag
         id: get_latest_tag
         uses: actions-ecosystem/action-get-latest-tag@v1
